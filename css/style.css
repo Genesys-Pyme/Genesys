@@ -1,0 +1,39 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face{
+    font-family: "BebasNeue-Regular";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/RobotoCondensed-VariableFont_wght.ttf);;
+}
+
+.logo{
+    font-family: "BebasNeue-Regular";
+    font-size: 2.5rem; 
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.centrado{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 90vh;
+}
