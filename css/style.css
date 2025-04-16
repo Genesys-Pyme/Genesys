@@ -15,6 +15,11 @@
     font-size: 2.5rem; 
 }
 
+.proyecto{
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+}
+
 .roboto{
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
@@ -36,4 +41,12 @@
     justify-content: center;
     margin: auto;
     height: 90vh;
+}
+
+.centrado2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 70vh;
 }
