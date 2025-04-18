@@ -42,27 +42,32 @@
             <div class="container">
                 <div class="container my-3">
             
-                    <form action="https://formsubmit.co/genesys.mza@gmail.com" method="POST">
-                        <div class="mb-3 w-100">
-                            <label for="inputText" class="form-label">Nombre y Apellido:</label>
-                            <input type="text" placeholder="Ej: Juan Perez" class="form-control" id="inputText" required>
-                          </div>
-                          <div class="mb-3">
-                              <label for="inputText" class="form-label">Email:</label>
-                              <input type="text" placeholder="Ej: juanperez@gmail.com" class="form-control" id="inputText" required>
-                          </div>
-                          <div class="mb-3">
-                              <label for="inputNumber" class="form-label">Telefono:</label>
-                              <input type="number" placeholder="Ej: 3815333000" class="form-control" id="inputNumber" required>
-                          </div>
-                          <div class="mb-3">
-                              <label for="inputText" class="form-label">Consulta:</label>
-                              <textarea id="inputText" class="form-control"  name="consulta" rows="4" required></textarea>
-                          </div>
-                          <input type="hidden" name="_captcha" value="false">
-                          <input type="hidden" name="_next" value="https://webgenesys.netlify.app/pages/gracias">
-                          <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-                    </form>
+                  <form action="https://formsubmit.co/genesys.mza@gmail.com" method="POST">
+                    <div class="mb-3 w-100">
+                      <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                      <input type="text" placeholder="Ej: Juan Perez" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="correo" class="form-label">Email:</label>
+                      <input type="email" placeholder="Ej: juanperez@gmail.com" class="form-control" id="correo" name="correo" required>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label">Teléfono:</label>
+                      <input type="tel" placeholder="Ej: 3815333000" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="consulta" class="form-label">Consulta:</label>
+                      <textarea id="consulta" class="form-control" name="consulta" rows="4" required></textarea>
+                    </div>
+                  
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://webgenesys.netlify.app/pages/gracias">
+                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                  </form>
+                  
             </div>
             </div>
         </section>
