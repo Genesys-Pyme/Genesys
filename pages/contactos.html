@@ -23,13 +23,13 @@
                     <a class="nav-link  roboto" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active  roboto" href="./quienesSomos.html">Quienes Somos</a>
+                    <a class="nav-link   roboto" href="./quienesSomos.html">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link roboto" href="./planes.html">Planes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link roboto" href="./contactos.html">Contacto</a>
+                    <a class="nav-link active roboto" href="./contactos.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -37,72 +37,36 @@
           </nav>
     </header>
 
-    <main>
-      
+   <main>
         <section>
-            <div class="container  text-center">
-              <h1 class=" sub mt-3">¡Somos Genesys!</h1>
-              <p class="lead">Un emprendimiento digital que convierte ideas en experiencias online memorables.</p>
-              <p class="lead">¡Tu proxima web comienza con nosotros!</p>
-            </div>
-        </section>
-          
-        <section class="bg-body-tertiary" data-aos="zoom-in">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <h3 class="logo text-center mt-5 mb-3">Algo sobre nosotros...</h3>
-                        <p class="lead ">En Genesys creemos que una web no es solo diseño: es una carta de presentación digital que debe hablar por vos. Combinamos diseño, tecnología y estrategia para construir sitios únicos y modernos.</p>
-                    </div>
-                    <div class="col-12 col-md-6 d-none d-md-block">
-                        <img src="../img/equipo.jpg" alt="imagen de equipo" class="w-100">
-                    </div>
-                </div>
+                <div class="container my-3">
+            
+                    <form action="https://formsubmit.co/genesys.mza@gmail.com" method="POST">
+                        <div class="mb-3 w-100">
+                            <label for="inputText" class="form-label">Nombre y Apellido:</label>
+                            <input type="text" placeholder="Ej: Juan Perez" class="form-control" id="inputText" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="inputText" class="form-label">Email:</label>
+                              <input type="text" placeholder="Ej: juanperez@gmail.com" class="form-control" id="inputText" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="inputNumber" class="form-label">Telefono:</label>
+                              <input type="number" placeholder="Ej: 3815333000" class="form-control" id="inputNumber" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="inputText" class="form-label">Consulta:</label>
+                              <textarea id="inputText" class="form-control"  name="consulta" rows="4" required></textarea>
+                          </div>
+                          <input type="hidden" name="_captcha" value="false">
+                          <input type="hidden" name="_next" value="https://webgenesys.netlify.app/pages/gracias">
+                          <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                    </form>
+            </div>
             </div>
         </section>
-
-        <section>
-            <div class="container my-5" data-aos="zoom-in">
-
-                <h3 class="logo text-center mt-5 mb-3">Nuestro Proposito</h3>
-
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="text-center">
-                        <i class="bi bi-lightbulb text-primary fs-1"></i>
-                        <p class="lead">Ayudar a negocios, pymes y emprendedores a construir su presencia digital de forma simple, accesible y profesional.</p>
-                        </div> 
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <div class="text-center">
-                        <i class="bi bi-rocket-takeoff text-warning fs-1"></i>
-                        <p class="lead">Ser referentes en soluciones web para quienes recién empiezan o quieren renovar su identidad online.</p>
-                        </div> 
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <div class="text-center">
-                        <i class="bi bi-heart-fill fs-1 text-danger"></i>
-                        <p class="lead">Brindar cercanía, diseño funcional, transparencia, escucha activa, y compromiso real con cada proyecto.</p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-info" data-aos="zoom-in" >
-            <div class="container centrado2" >
-                <h2 class="text-center proyecto text-white">¡Charla con nosotros!</h2>
-                <p class="roboto text-center">¡Queremos conocerte! </p>
-                <div class="mx-auto text-center">
-                    
-                    <a href="#"><button class="btn btn-primary mb-2">Habla con un asesor <i class="bi bi-chat-left-text"></i></button></a>
-                </div>
-            </div>
-        </section>
-
-    </main>
+   </main>
 
     <footer class="bg-primary">
         <div class="container">
