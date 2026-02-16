@@ -15,6 +15,9 @@
     src: url(../fonts/SpecialGothicCondensedOne-Regular.ttf)
 }
 
+#contactos{
+    min-height: 100vh;
+}
 
 .logo{
     font-family: "BebasNeue-Regular";
