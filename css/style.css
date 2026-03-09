@@ -82,3 +82,78 @@
 .bg-orange{
     background-color: #FFB02E;
 }
+
+/* CHAT GENESYS */
+
+#genesys-chat-toggle{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:50px;
+padding:14px 20px;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+cursor:pointer;
+z-index:9999;
+}
+
+#genesys-chat{
+position:fixed;
+bottom:90px;
+right:25px;
+width:340px;
+background:white;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
+overflow:hidden;
+display:none;
+z-index:9999;
+font-family:Roboto, sans-serif;
+}
+
+#genesys-header{
+background:#0d6efd;
+color:white;
+padding:12px;
+font-weight:bold;
+}
+
+#genesys-messages{
+height:300px;
+overflow-y:auto;
+padding:12px;
+font-size:14px;
+}
+
+.genesys-user{
+text-align:right;
+margin:6px 0;
+}
+
+.genesys-bot{
+text-align:left;
+margin:6px 0;
+}
+
+#genesys-input{
+display:flex;
+border-top:1px solid #eee;
+}
+
+#genesys-input input{
+flex:1;
+border:none;
+padding:10px;
+outline:none;
+}
+
+#genesys-input button{
+background:#0d6efd;
+border:none;
+color:white;
+padding:10px 15px;
+cursor:pointer;
+}

@@ -25,6 +25,94 @@
         <link rel="stylesheet" href="./css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+        <button id="genesys-chat-toggle">💬 Asesor</button>
+
+        <div id="genesys-chat">
+            <div id="genesys-header">Asesor Genesys</div>
+
+            <div id="genesys-messages">
+            <div class="genesys-bot">
+            Hola 👋 Soy el asesor digital de Genesys.<br><br>
+            ¿Querés crear una página web para tu negocio?
+            </div>
+            </div>
+
+            <div id="genesys-input">
+            <input id="genesys-text" placeholder="Escribí tu consulta...">
+            <button onclick="genesysSend()">Enviar</button>
+            </div>
+        </div>
+        <script>
+
+            const toggle = document.getElementById("genesys-chat-toggle")
+            const chat = document.getElementById("genesys-chat")
+            const messages = document.getElementById("genesys-messages")
+
+            toggle.onclick = () => {
+            chat.style.display = "block"
+            toggle.style.display = "none"
+            }
+
+            function genesysSend(){
+
+            let input = document.getElementById("genesys-text")
+            let text = input.value.toLowerCase()
+
+            messages.innerHTML += `<div class="genesys-user">${input.value}</div>`
+
+            let reply = "Contame un poco sobre tu negocio para ayudarte mejor."
+
+            if(text.includes("precio") || text.includes("cuanto")){
+            reply = `
+            El precio depende del tipo de web que necesites.<br><br>
+
+            💻 Landing page<br>
+            🛒 Tienda online<br>
+            📊 Web empresarial<br><br>
+
+            Si querés te preparo un presupuesto rápido 👇<br><br>
+
+            <a href="https://wa.me/2604104160?text=Hola%20Genesys!%20Quiero%20consultar%20por%20una%20pagina%20web">Hablar por WhatsApp</a>
+            `
+            }
+
+            else if(text.includes("tienda") || text.includes("ecommerce")){
+            reply = `
+            Podemos crear una tienda online donde puedas vender productos 24/7.<br><br>
+
+            Incluye:<br>
+            ✔ carrito de compras<br>
+            ✔ pagos online<br>
+            ✔ gestión de productos<br><br>
+
+            ¿Querés verlo por WhatsApp?
+            <br><br>
+
+            <a href="https://wa.me/2604104160">Hablar ahora</a>
+            `
+            }
+
+            else if(text.includes("pagina") || text.includes("web")){
+            reply = `
+            Una página web puede ayudarte a:<br><br>
+
+            📈 conseguir clientes<br>
+            🌎 mostrar tu negocio online<br>
+            📲 recibir consultas por WhatsApp<br><br>
+
+            Si querés te muestro ejemplos 👇<br><br>
+
+            <a href="https://wa.me/2604104160">Hablar con asesor</a>
+            `
+            }
+
+            messages.innerHTML += `<div class="genesys-bot">${reply}</div>`
+
+            input.value=""
+            messages.scrollTop = messages.scrollHeight
+            }
+
+        </script>
     </head>
     <body>
         <header>
