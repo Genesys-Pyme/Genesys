@@ -2,12 +2,14 @@ export async function handler(event) {
 
 if (!event.body) {
 return {
-statusCode: 200,
-body: JSON.stringify({
-reply: "Hola! Soy el asesor de Genesys. ¿En qué puedo ayudarte?"
+statusCode:200,
+body:JSON.stringify({
+reply:"Hola! Soy el asesor de Genesys. ¿En qué puedo ayudarte?"
 })
 }
 }
+
+try{
 
 const { message } = JSON.parse(event.body)
 
@@ -22,7 +24,7 @@ model:"gpt-4.1-mini",
 messages:[
 {
 role:"system",
-content:"Sos el asesor comercial de Genesys. Ayudás a pymes a crear páginas web, tiendas online y landing pages."
+content:"Sos el asesor comercial de Genesys que vende desarrollo web para pymes."
 },
 {
 role:"user",
@@ -34,16 +36,28 @@ content:message
 
 const data = await response.json()
 
-const reply = data?.choices?.[0]?.message?.content || "No pude generar una respuesta."
+console.log(data)
+
+const reply = data?.choices?.[0]?.message?.content
 
 return {
 statusCode:200,
-headers:{
-"Content-Type":"application/json"
-},
 body:JSON.stringify({
-reply:reply
+reply: reply || "OpenAI no devolvió respuesta."
 })
+}
+
+}catch(error){
+
+console.log(error)
+
+return{
+statusCode:200,
+body:JSON.stringify({
+reply:"Error en el servidor del chat."
+})
+}
+
 }
 
 }
