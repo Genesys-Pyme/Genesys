@@ -245,7 +245,11 @@
         let input = document.getElementById("genesys-text")
         let text = input.value
 
-        messages.innerHTML += `<div class="genesys-user">${text}</div>`
+        messages.innerHTML += `
+            <div class="genesys-user">
+            <div>${text}</div>
+            </div>
+            `
 
         input.value=""
 
@@ -256,7 +260,11 @@
 
         const data = await res.json()
 
-        messages.innerHTML += `<div class="genesys-bot">${data.reply}</div>`
+        messages.innerHTML += `
+            <div class="genesys-bot">
+            <div>${data.reply}</div>
+            </div>
+            `
 
         messages.scrollTop = messages.scrollHeight
         }
