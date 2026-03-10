@@ -11,7 +11,7 @@ reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys 🤖"
 
 try{
 
-const { message } = JSON.parse(event.body)
+const { message, history } = JSON.parse(event.body)
 
 const text = message.toLowerCase()
 
@@ -87,6 +87,7 @@ Reglas importantes:
 • tono humano y profesional
 `
 },
+...(history || []),
 {
 role:"user",
 content:message
