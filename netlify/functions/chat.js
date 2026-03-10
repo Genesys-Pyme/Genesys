@@ -95,15 +95,9 @@ Decí que sin una página web probablemente está perdiendo clientes.
 Recomendá el tipo de web ideal según su negocio.
 
 Luego invitá a hablar por WhatsApp.
+"
 
-4️⃣ Si SÍ tiene web:
-
-Pedí el link para analizarla gratis.
-
-Ejemplo:
-"Perfecto. Pasame tu web y te hago un análisis gratis."
-
-5️⃣ Cuando analices su web:
+4️⃣ Cuando analices su web:
 
 Mencioná:
 
