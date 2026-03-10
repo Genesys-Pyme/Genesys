@@ -15,43 +15,6 @@ const { message } = JSON.parse(event.body)
 
 const text = message.toLowerCase()
 
-/* DETECTAR SI ENVÍA UNA WEB */
-
-const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+)/g
-
-if(urlRegex.test(text)){
-
-return {
-statusCode:200,
-body:JSON.stringify({
-reply:`
-Gracias por compartir tu página web 👀
-
-Voy a comentarte algunos puntos clave que influyen en si una web genera clientes o no:
-
-✔ velocidad de carga  
-✔ claridad del mensaje  
-✔ llamadas a la acción visibles  
-✔ botón de contacto o WhatsApp  
-✔ optimización para Google  
-
-En muchos negocios detectamos que:
-
-• la web no invita a contactar  
-• el botón de WhatsApp no es visible  
-• el diseño no transmite confianza  
-• no aparece en Google  
-
-Con algunos ajustes se puede aumentar mucho la cantidad de consultas que recibe un negocio.
-
-Si querés puedo mostrarte cómo se vería una versión optimizada para tu negocio 👇
-
-https://wa.me/2604104160
-`
-})
-}
-
-}
 
 /* RESPUESTA CON IA */
 
