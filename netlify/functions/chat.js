@@ -4,7 +4,7 @@ if (!event.body) {
 return {
 statusCode:200,
 body:JSON.stringify({
-reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys. ¿A qué se dedica tu negocio?"
+reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys."
 })
 }
 }
