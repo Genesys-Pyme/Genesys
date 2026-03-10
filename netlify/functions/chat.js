@@ -4,7 +4,7 @@ if (!event.body) {
 return {
 statusCode:200,
 body:JSON.stringify({
-reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys."
+reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys 🤖"
 })
 }
 }
