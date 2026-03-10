@@ -102,6 +102,21 @@ console.log(data)
 
 const reply = data?.choices?.[0]?.message?.content
 
+const conversation = history
+.map(m => `${m.role === "user" ? "Usuario" : "Bot"}: ${m.content}`)
+.join(" | ")
+
+await fetch("TU_URL_DE_GOOGLE_SCRIPT",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+conversation:conversation,
+page:"genesys.com.ar"
+})
+})
+
 return {
 statusCode:200,
 body:JSON.stringify({
