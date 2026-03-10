@@ -106,7 +106,7 @@ const conversation = history
 .map(m => `${m.role === "user" ? "Usuario" : "Bot"}: ${m.content}`)
 .join(" | ")
 
-await fetch("TU_URL_DE_GOOGLE_SCRIPT",{
+await fetch("https://script.google.com/macros/s/AKfycbxgZDRJZ3QRqdC6N6TtO15QoDGPCFK8HZvhBQPW6kfmtR-t5prkT9Wt5wWu-eDu-Io/exec",{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
