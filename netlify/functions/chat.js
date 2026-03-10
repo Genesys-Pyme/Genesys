@@ -102,7 +102,13 @@ console.log(data)
 
 const reply = data?.choices?.[0]?.message?.content
 
-const conversation = history
+const fullHistory = [
+...(history || []),
+{ role:"user", content:message },
+{ role:"assistant", content:reply }
+]
+
+const conversation = fullHistory
 .map(m => `${m.role === "user" ? "Usuario" : "Bot"}: ${m.content}`)
 .join(" | ")
 
