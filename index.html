@@ -262,9 +262,17 @@
 
         const data = await res.json()
 
-        messages.innerHTML += `
+        let reply = data.reply
+
+            // convertir link de whatsapp en botón
+            reply = reply.replace(
+            /https:\/\/wa\.me\/\d+/g,
+            '<a href="$&" target="_blank" class="genesys-wa-btn">Abrir WhatsApp</a>'
+            )
+
+            messages.innerHTML += `
             <div class="genesys-bot">
-            <div>${data.reply}</div>
+            <div>${reply}</div>
             </div>
             `
 

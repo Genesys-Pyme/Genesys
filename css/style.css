@@ -177,3 +177,19 @@ color:white;
 padding:10px 15px;
 cursor:pointer;
 }
+
+.genesys-wa-btn{
+display:inline-block;
+margin-top:8px;
+background:#25D366;
+color:white;
+padding:8px 14px;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+font-weight:500;
+}
+
+.genesys-wa-btn:hover{
+background:#1ebe5d;
+}
