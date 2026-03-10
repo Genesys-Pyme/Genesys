@@ -265,10 +265,13 @@
         let reply = data.reply
 
             // convertir link de whatsapp en botón
-            reply = reply.replace(
-            /https:\/\/wa\.me\/\d+/g,
-            '<a href="$&" target="_blank" class="genesys-wa-btn">Abrir WhatsApp</a>'
-            )
+            const waLink = "https://wa.me/2604104160?text=" + 
+                encodeURIComponent("Hola! Estuve hablando con Gyno en la web de Genesys. Quiero info para mi negocio.")
+
+                reply = reply.replace(
+                /https:\/\/wa\.me\/\d+/g,
+                `<a href="${waLink}" target="_blank" class="genesys-wa-btn">🟢 Hablar con un asesor ahora</a>`
+                )
 
             messages.innerHTML += `
             <div class="genesys-bot">
