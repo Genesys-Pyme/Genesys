@@ -151,7 +151,6 @@ headers:{
 "Content-Type":"application/json"
 },
 body: JSON.stringify({
-  visitorId,
   negocio: lead.negocio,
   tieneWeb: lead.tieneWeb,
   interes: lead.interes,
