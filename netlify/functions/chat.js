@@ -102,6 +102,47 @@ console.log(data)
 
 const reply = data?.choices?.[0]?.message?.content
 
+const analysis = await fetch("https://api.openai.com/v1/chat/completions",{
+method:"POST",
+headers:{
+"Content-Type":"application/json",
+"Authorization":`Bearer ${process.env.OPENAI_API_KEY}`
+},
+body:JSON.stringify({
+model:"gpt-4o-mini",
+messages:[
+{
+role:"system",
+content:`
+Analiza la conversación de un visitante con un asesor web.
+
+Devuelve SOLO JSON con este formato:
+
+{
+"negocio":"tipo de negocio o desconocido",
+"tieneWeb":"si / no / no dijo",
+"interes":"alto / medio / bajo"
+}
+
+alto = quiere hacer web
+medio = consulta general
+bajo = solo curiosidad
+`
+},
+{
+role:"user",
+content:conversation
+}
+]
+})
+})
+
+const analysisData = await analysis.json()
+
+const lead = JSON.parse(
+analysisData.choices[0].message.content
+)
+
 const fullHistory = [
 ...(history || []),
 { role:"user", content:message },
@@ -114,9 +155,11 @@ const conversation = fullHistory
 
 await fetch("https://script.google.com/macros/s/AKfycbxgZDRJZ3QRqdC6N6TtO15QoDGPCFK8HZvhBQPW6kfmtR-t5prkT9Wt5wWu-eDu-Io/exec",{
 method:"POST",
-body: JSON.stringify({
-conversation: conversation,
-page: "genesys.com.ar"
+body:JSON.stringify({
+negocio:lead.negocio,
+tieneWeb:lead.tieneWeb,
+interes:lead.interes,
+conversation:conversation
 })
 }) 
 
