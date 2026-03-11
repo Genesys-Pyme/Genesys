@@ -11,7 +11,7 @@ reply:"Hola! 👋 Soy Gyno, asesor digital de Genesys 🤖"
 
 try{
 
-const { message, history, visitorId } = JSON.parse(event.body)
+const { message, history, conversationId } = JSON.parse(event.body)
 
 /* RESPUESTA CON IA */
 
@@ -155,7 +155,9 @@ body: JSON.stringify({
   negocio: lead.negocio,
   tieneWeb: lead.tieneWeb,
   interes: lead.interes,
-  conversation: conversation
+  conversation: conversation,
+  conversationId: conversationId
+
 })
 })
 

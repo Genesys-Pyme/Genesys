@@ -211,6 +211,7 @@
         <script>
             AOS.init();
         </script>
+        
         <button id="genesys-chat-toggle">Gyno 🤖</button>
 
         <div id="genesys-chat">
@@ -232,7 +233,12 @@
         </div>
 
         <script>
+        let conversationId = sessionStorage.getItem("genesysConversation")
 
+        if(!conversationId){
+        conversationId = crypto.randomUUID()
+        sessionStorage.setItem("genesysConversation", conversationId)
+        }
         const toggle = document.getElementById("genesys-chat-toggle")
         const chat = document.getElementById("genesys-chat")
         const messages = document.getElementById("genesys-messages")
@@ -278,7 +284,7 @@
             body:JSON.stringify({
             message:text,
             history:chatHistory,
-            visitorId:visitorId
+            conversationId:conversationId
             })
             })
             
