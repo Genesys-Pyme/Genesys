@@ -145,8 +145,6 @@ console.log("Error analizando lead:",err)
 
 
 
-const sheetData = await sheetResponse.text()
-console.log("Sheets response:", sheetData)
 
 return {
 statusCode:200,
