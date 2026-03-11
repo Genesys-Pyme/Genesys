@@ -318,17 +318,16 @@
             
         messages.scrollTop = messages.scrollHeight
         }
-        window.addEventListener("beforeunload", async function () {
+        window.addEventListener("beforeunload", function () {
 
         if(chatHistory.length === 0) return
 
-        await fetch("/.netlify/functions/chat-save",{
-        method:"POST",
-        body:JSON.stringify({
+        const data = JSON.stringify({
         conversation:chatHistory,
         conversationId:conversationId
         })
-        })
+
+        navigator.sendBeacon("/.netlify/functions/chat-save", data)
 
         })
         </script>
