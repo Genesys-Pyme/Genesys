@@ -137,11 +137,28 @@ content:conversation
 })
 })
 
+let lead = {
+negocio:"desconocido",
+tieneWeb:"no dijo",
+interes:"medio"
+}
+
+try{
+
 const analysisData = await analysis.json()
 
-const lead = JSON.parse(
-analysisData.choices[0].message.content
-)
+let content = analysisData.choices[0].message.content
+
+// limpiar markdown si viene ```json
+content = content.replace(/```json/g,"").replace(/```/g,"").trim()
+
+lead = JSON.parse(content)
+
+}catch(err){
+
+console.log("Error analizando lead:",err)
+
+}
 
 const fullHistory = [
 ...(history || []),
