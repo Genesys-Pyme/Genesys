@@ -143,22 +143,7 @@ lead = JSON.parse(content)
 console.log("Error analizando lead:",err)
 }
 
-/* GUARDAR EN GOOGLE SHEETS */
 
-const sheetResponse = await fetch("https://script.google.com/macros/s/AKfycbxgZDRJZ3QRqdC6N6TtO15QoDGPCFK8HZvhBQPW6kfmtR-t5prkT9Wt5wWu-eDu-Io/exec",{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body: JSON.stringify({
-  negocio: lead.negocio,
-  tieneWeb: lead.tieneWeb,
-  interes: lead.interes,
-  conversation: conversation,
-  conversationId: conversationId
-
-})
-})
 
 const sheetData = await sheetResponse.text()
 console.log("Sheets response:", sheetData)
