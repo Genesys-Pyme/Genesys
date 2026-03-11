@@ -118,7 +118,7 @@ body: JSON.stringify({
 conversation: conversation,
 page: "genesys.com.ar"
 })
-})
+}) 
 
 return {   
 statusCode:200,
