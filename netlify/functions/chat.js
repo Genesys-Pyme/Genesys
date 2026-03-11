@@ -145,7 +145,7 @@ console.log("Error analizando lead:",err)
 
 /* GUARDAR EN GOOGLE SHEETS */
 
-await fetch("https://script.google.com/macros/s/AKfycbxgZDRJZ3QRqdC6N6TtO15QoDGPCFK8HZvhBQPW6kfmtR-t5prkT9Wt5wWu-eDu-Io/exec",{
+const sheetResponse = await fetch("https://script.google.com/macros/s/AKfycbxgZDRJZ3QRqdC6N6TtO15QoDGPCFK8HZvhBQPW6kfmtR-t5prkT9Wt5wWu-eDu-Io/exec",{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
