@@ -77,7 +77,7 @@ negocio:lead.negocio,
 tieneWeb:lead.tieneWeb,
 interes:lead.interes,
 conversation:textConversation,
-conversationId:conversationId
+conversationId:conversationId  
 })
 })
 
