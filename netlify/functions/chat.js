@@ -158,6 +158,9 @@ conversation:conversation
 })
 })
 
+const sheetData = await sheetResponse.text()
+console.log("Sheets response:", sheetData)
+
 return {
 statusCode:200,
 body:JSON.stringify({
