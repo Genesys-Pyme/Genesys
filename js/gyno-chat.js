@@ -2,15 +2,15 @@
 
 document.body.insertAdjacentHTML("beforeend",`
 
-<button id="genesys-chat-toggle">Gyno 🤖</button>
+<button id="genesys-chat-toggle">Gyno <i class="bi bi-robot"></i></button>
 
 <div id="genesys-chat">
-<div id="genesys-header">Gyno 🤖</div>
+<div id="genesys-header">Gyno <i class="bi bi-robot"></i></div>
 
 <div id="genesys-messages">
 <div class="genesys-bot">
 <div>
-Hola 👋 Soy Gyno! Asesor digital de Genesys 🤖
+¡Hola! 👋 Soy Gyno, Asesor digital de Genesys 💙.
 </div>
 </div>
 </div>
