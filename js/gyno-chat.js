@@ -10,7 +10,7 @@ document.body.insertAdjacentHTML("beforeend",`
 <div id="genesys-messages">
 <div class="genesys-bot">
 <div>
-¡Hola! 👋 Soy Gyno, Asesor digital de Genesys 💙.
+¡Hola! 👋 Soy Gyno, Asesor digital de Genesys 💙
 </div>
 </div>
 </div>
