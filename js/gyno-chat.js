@@ -140,23 +140,31 @@ const gyno = document.getElementById("gyno-container")
 
 window.addEventListener("scroll", () => {
 
-const footer = document.querySelector("footer")
 const gyno = document.getElementById("gyno-container")
 
+function adjustGynoPosition(){
+
+const footer = document.querySelector("footer")
 if(!footer || !gyno) return
 
-const footerTop = footer.getBoundingClientRect().top
-const windowHeight = window.innerHeight
+const footerRect = footer.getBoundingClientRect()
+const gynoHeight = gyno.offsetHeight
+const margin = 25
 
-if(footerTop < windowHeight){
+if(footerRect.top < window.innerHeight){
 
-const overlap = windowHeight - footerTop
-gyno.style.bottom = (overlap + 25) + "px"
+const newBottom = window.innerHeight - footerRect.top + margin
+gyno.style.bottom = newBottom + "px"
 
 }else{
 
-gyno.style.bottom = "25px"
+gyno.style.bottom = margin + "px"
 
 }
+
+}
+
+window.addEventListener("scroll", adjustGynoPosition)
+window.addEventListener("resize", adjustGynoPosition)
 
 })
