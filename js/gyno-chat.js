@@ -2,15 +2,24 @@
 
 document.body.insertAdjacentHTML("beforeend",`
 
-<button id="genesys-chat-toggle">Gyno <i class="bi bi-robot"></i></button>
+<div id="gyno-container">
+
+<div id="gyno-bubble">
+¡Hola! 👋 Soy Gyno,<br>
+asesor virtual de Genesys 💙
+</div>
+
+<img src="/img/gyno.png" id="gyno-floating">
+
+</div>
 
 <div id="genesys-chat">
-<div id="genesys-header">Gyno <i class="bi bi-robot"></i></div>
+<div id="genesys-header">Gyno</div>
 
 <div id="genesys-messages">
 <div class="genesys-bot">
 <div>
-¡Hola! 👋 Soy Gyno, Asesor digital de Genesys 💙
+Hola 👋 Soy Gyno! Asesor digital de Genesys 💙
 </div>
 </div>
 </div>
@@ -33,7 +42,7 @@ conversationId = crypto.randomUUID()
 sessionStorage.setItem("genesysConversation", conversationId)
 }
 
-const toggle = document.getElementById("genesys-chat-toggle")
+const toggle = document.getElementById("gyno-floating")
 const chat = document.getElementById("genesys-chat")
 const messages = document.getElementById("genesys-messages")
 

@@ -193,3 +193,99 @@ font-weight:500;
 .genesys-wa-btn:hover{
 background:#1ebe5d;
 }
+
+#gyno-floating{
+position: fixed;
+bottom: 25px;
+right: 25px;
+width: 110px;
+cursor: pointer;
+z-index: 9999;
+animation: gynoFloat 3s ease-in-out infinite;
+transition: transform .2s ease;
+}
+
+#gyno-floating:hover{
+transform: scale(1.1);
+}
+
+@keyframes gynoFloat {
+0%{
+transform: translateY(0px);
+}
+
+50%{
+transform: translateY(-12px);
+}
+
+100%{
+transform: translateY(0px);
+}
+}
+
+#gyno-container{
+position: fixed;
+bottom: 25px;
+right: 25px;
+z-index: 9999;
+}
+
+/* ROBOT */
+
+#gyno-floating{
+width:110px;
+cursor:pointer;
+animation:gynoFloat 3s ease-in-out infinite;
+}
+
+/* BURBUJA */
+
+#gyno-bubble{
+position:absolute;
+bottom:70px;
+right:90px;
+
+background:white;
+padding:14px 18px;
+border-radius:14px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+
+font-size:14px;
+line-height:1.4;
+
+min-width:220px;
+max-width:260px;
+}
+
+/* TRIANGULO */
+
+#gyno-bubble::after{
+content:"";
+position:absolute;
+
+bottom:-8px;
+right:10px;   /* mueve el triangulo hacia la esquina derecha */
+
+width:0;
+height:0;
+
+border-left:10px solid transparent;
+border-right:10px solid transparent;
+border-top:10px solid white;
+}
+
+/* FLOTACION */
+
+@keyframes gynoFloat{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0px);}
+}
+@media (max-width: 768px) {
+
+#gyno-bubble{
+display:none;
+}
+
+}
