@@ -136,6 +136,7 @@ navigator.sendBeacon("/.netlify/functions/chat-save", data)
 
 const footer = document.getElementById("footer")
 const gyno = document.getElementById("gyno-container")
+const bubble = document.getElementById("gyno-bubble")
 
 window.addEventListener("scroll", () => {
 
@@ -146,8 +147,23 @@ function adjustGynoPosition(){
 const footer = document.querySelector("footer")
 if(!footer || !gyno) return
 
+/* MOSTRAR / OCULTAR BURBUJA */
+
+if(window.scrollY > 120){
+
+bubble.style.opacity = "0"
+bubble.style.pointerEvents = "none"
+
+}else{
+
+bubble.style.opacity = "1"
+bubble.style.pointerEvents = "auto"
+
+}
+
+/* POSICION DE GYNO EN FOOTER */
+
 const footerRect = footer.getBoundingClientRect()
-const gynoHeight = gyno.offsetHeight
 const margin = 25
 
 if(footerRect.top < window.innerHeight){

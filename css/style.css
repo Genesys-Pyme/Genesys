@@ -247,6 +247,7 @@ line-height:1.4;
 
 min-width:180px;
 max-width:260px;
+transition: opacity .4s ease;
 }
 
 /* TRIANGULO */
