@@ -245,7 +245,7 @@ box-shadow:0 6px 20px rgba(0,0,0,0.15);
 font-size:14px;
 line-height:1.4;
 
-min-width:220px;
+min-width:180px;
 max-width:260px;
 }
 
@@ -272,11 +272,4 @@ border-top:10px solid white;
 0%{transform:translateY(0px);}
 50%{transform:translateY(-12px);}
 100%{transform:translateY(0px);}
-}
-@media (max-width: 768px) {
-
-#gyno-bubble{
-display:none;
-}
-
 }

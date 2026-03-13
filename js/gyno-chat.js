@@ -5,8 +5,7 @@ document.body.insertAdjacentHTML("beforeend",`
 <div id="gyno-container">
 
 <div id="gyno-bubble">
-¡Hola! 👋 Soy Gyno,<br>
-asesor virtual de Genesys 💙
+Chatea conmigo...💙
 </div>
 
 <img src="/img/gyno.png" id="gyno-floating">
