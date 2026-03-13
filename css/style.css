@@ -124,6 +124,17 @@ background:#0d6efd;
 color:white;
 padding:12px;
 font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+#genesys-close{
+background:none;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
 }
 
 #genesys-messages{

@@ -13,7 +13,10 @@ Chatea conmigo...💙
 </div>
 
 <div id="genesys-chat">
-<div id="genesys-header">Gyno</div>
+<div id="genesys-header">
+<span>Gyno</span>
+<button id="genesys-close">✕</button>
+</div>
 
 <div id="genesys-messages">
 <div class="genesys-bot">
@@ -42,12 +45,21 @@ sessionStorage.setItem("genesysConversation", conversationId)
 }
 
 const toggle = document.getElementById("gyno-floating")
+
 const chat = document.getElementById("genesys-chat")
 const messages = document.getElementById("genesys-messages")
+
+const closeBtn = document.getElementById("genesys-close")
+
 
 toggle.onclick = () => {
 chat.style.display = "block"
 toggle.style.display = "none"
+}
+
+closeBtn.onclick = () => {
+chat.style.display = "none"
+toggle.style.display = "block"
 }
 
 let chatHistory = JSON.parse(sessionStorage.getItem("genesysHistory")) || []
@@ -140,7 +152,10 @@ const bubble = document.getElementById("gyno-bubble")
 
 window.addEventListener("scroll", () => {
 
+/* CONTROL DE POSICION DE GYNO */
+
 const gyno = document.getElementById("gyno-container")
+const bubble = document.getElementById("gyno-bubble")
 
 function adjustGynoPosition(){
 
@@ -161,7 +176,7 @@ bubble.style.pointerEvents = "auto"
 
 }
 
-/* POSICION DE GYNO EN FOOTER */
+/* DETENER EN FOOTER */
 
 const footerRect = footer.getBoundingClientRect()
 const margin = 25
