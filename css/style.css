@@ -290,3 +290,24 @@ border-top:10px solid white;
 50%{transform:translateY(-12px);}
 100%{transform:translateY(0px);}
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #gyno-floating {
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #gyno-bubble {
+    font-size: 12px;
+    padding: 6px 10px;
+    bottom: 50px;
+    right: 45px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+}
