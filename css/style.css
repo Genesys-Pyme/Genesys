@@ -294,8 +294,8 @@ border-top:10px solid white;
 /* MOBILE */
 @media (max-width: 768px) {
   #gyno-floating {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     bottom: 15px;
     right: 15px;
   }
