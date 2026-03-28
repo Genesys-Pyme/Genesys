@@ -15,6 +15,24 @@
     src: url(../fonts/SpecialGothicCondensedOne-Regular.ttf)
 }
 
+#primeraSeccion{
+    min-height: 100vh;
+}
+
+.text-bebas{
+    font-family: "BebasNeue-Regular";
+}
+
+.text-bebas2{
+    font-family: "BebasNeue-Regular";
+    font-size: 3rem;
+}
+
+.text-roboto{
+    font-family: "Roboto";
+}
+
+
 #contactos{
     min-height: 100vh;
 }
