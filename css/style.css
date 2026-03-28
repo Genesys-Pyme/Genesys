@@ -24,6 +24,10 @@
     object-fit: cover;
 }
 
+.tamano{
+    font-size: 5rem;
+}
+
 .text-bebas{
     font-family: "BebasNeue-Regular";
 }
