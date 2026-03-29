@@ -62,8 +62,8 @@
 }
 
 
-#contactos{
-    min-height: 100vh;
+#contacto{
+    min-height: 80vh;
 }
 
 .logo{
@@ -108,7 +108,7 @@
     background-size: cover;
     position: relative;
     min-height: 100vh;
-    padding-top: 80px
+    padding-top: 80px;
 }
 
 #banner::before {
@@ -119,22 +119,7 @@
     z-index: 0;
 }
 
-.centrado{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    height: 90vh;
-}
 
-.centrado2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    height: 70vh;
-}
 
 .text-orange{
     color:#FFB02E
@@ -371,10 +356,6 @@ border-top:10px solid white;
     font-family: "BebasNeue-Regular";
     font-size: 5rem;
 
-}
-
-#banner{
-    min-height: 90vh;
 }
 }
 
