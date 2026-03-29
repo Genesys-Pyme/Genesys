@@ -29,7 +29,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-transparent" data-bs-theme="dark" >
+            <nav class="navbar navbar-expand-lg navbar-transparent fixed-top" data-bs-theme="dark" >
                 <div class="container">
                   <a class="navbar-brand logo" href="./index.html"><i class="bi bi-code-slash"></i> Genesys</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,17 +38,17 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                        <a class="nav-link active roboto" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active text-roboto" aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link roboto" href="./pages/quienesSomos.html">Quienes Somos</a>
+                        <a class="nav-link text-roboto" href="./pages/quienesSomos.html">Quienes Somos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link roboto" href="./pages/planes.html">Planes</a>
+                        <a class="nav-link text-roboto" href="./pages/planes.html">Planes</a>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link roboto" href="./pages/contactos.html">Contacto</a>
+                        <a class="nav-link text-roboto" href="./pages/contactos.html">Contacto</a>
                       </li>
                     </ul>
                   </div>
@@ -57,20 +57,16 @@
         </header>
 
         <main>
-            <section id="banner">
-                
-                <video autoplay muted loop playsinline class="video-bg">
-                    <source src="img/rediseno.webm" type="video/webm">
-                </video>
+            <section id="banner" class="d-flex align-items-center">
 
                 <div class="container" data-aos="fade-up">
                    <div class="centrado">
-                    <h1 class="text-white text-bebas3 " >creamos <br> tu web </h1>
+                    <h1 class="text-white text-bebas3" > creamos  <br> tu web </h1>
                     <p class="text-white text-roboto">Llevamos tu idea al mundo digital con una web que representa tu marca y potencia tus resultados.</p>
                     <div class="botones d-flex gap-3">
                         <div>
-                            <a href="./pages/planes.html"><button class="btn btn-dark">Solicitar presupuesto </button></a>
-                            <a href="#primeraSeccion"><button class="btn btn-light">+ Info</button></a>
+                            <a href="#primeraSeccion"><button class="btn btn-primary text-roboto">Solicitar presupuesto </button></a>
+                            <a href="./pages/quienesSomos.html"><button class="btn btn-light text-roboto">Conocenos</button></a>
                         </div>
                     </div>
                     
@@ -92,6 +88,7 @@
                                 <div class="p-3">
                                     <h2 class="mb-0 text-bebas ">Pagina web</h2>
                                     <p class="text-roboto">Paginas web a medida que reflejan tu marca y convierten visitas en clientes reales.</p>
+                                    <a href="https://api.whatsapp.com/send?phone=2604104160&text=¡Hola Genesys👋! Estoy interesado en realizar una Pagina Web para mi proyecto."><button class="btn btn-primary text-roboto">+ Info</button></a>
                                 </div>
                                 
                             </div>
@@ -106,6 +103,7 @@
                                 <div class="p-3">
                                     <h2 class="mb-0 text-bebas ">Ecommerce</h2>
                                     <p class="text-roboto">Tiendas en línea robustas y optimizadas para vender. Experiencias de compra fluidas que maximizan tus ingresos.</p>
+                                    <a href="https://api.whatsapp.com/send?phone=2604104160&text=¡Hola Genesys👋! Estoy interesado en realizar un Ecommerce para mi proyecto."><button class="btn btn-primary text-roboto">+ Info</button></a>
                                 </div>
                             </div>
                             
@@ -117,6 +115,7 @@
                                 <div class="p-3">
                                     <h2 class="mb-0 text-bebas ">Landing Page</h2>
                                     <p class="text-roboto">Páginas de aterrizaje de alta conversión personalizadas. Diseño persuasivo y estratégico que vende.</p>
+                                    <a href="https://api.whatsapp.com/send?phone=2604104160&text=¡Hola Genesys👋! Estoy interesado en realizar una Landing Page para mi proyecto."><button class="btn btn-primary text-roboto">+ Info</button></a>
                                 </div>
                             </div>
                         </div>
@@ -127,39 +126,40 @@
                 </div>
             </section>
             
-            <section class="bg-body-tertiary " >
+            <section id="proceso" class="bg-body-tertiary d-flex align-items-center" >
                 <div class="container py-5" data-aos="zoom-in">
-                    <h2 class="text-center mb-5 logo">¿Como lo hacemos?</h2>
+                    <p class="text-bebas mb-0 text-primary" data-aos="zoom-in">¿Como lo hacemos?</p>
+                    <h2 class="text-bebas2 "data-aos="zoom-in" ><strong>Nuestros Procesos</strong></h2>
                             <div class="row gy-3">
                                 <article class="col-12 col-md-3 ">
                                     <div class="bg-white border rounded p-3 h-100 ">
-                                        <i class="bi bi-1-circle-fill fs-1 text-bebas text-primary"></i>
-                                        <p class="text-roboto text-black fs-4 mb-0">Te escuchamos</p>
-                                        <p class="">Contanos tu idea, lo que queres y lo que imaginas.</p>
+                                        <p class="text-primary text-bebas fs-3 mb-0"><i class="bi bi-1-square-fill"></i></p>
+                                        <p class="text-bebas text-black fs-4 mb-0">Te escuchamos</p>
+                                        <p class="text-roboto">Contanos tu idea, lo que queres y lo que imaginas.</p>
                                     </div>
                                 </article>
         
                                 <article class="col-12 col-md-3">
                                     <div class="bg-white border rounded p-3 h-100 ">
-                                        <i class="bi bi-2-circle-fill fs-1 text-bebas text-primary"></i>
-                                        <p class="text-roboto text-black fs-4 mb-0">Prototipamos</p>
-                                        <p class="">Te mostramos un diseño tentativo de cómo se verá.</p>
+                                        <p class="text-primary text-bebas fs-3 mb-0"><i class="bi bi-2-square-fill"></i></p>
+                                        <p class="text-bebas text-black fs-4 mb-0">Prototipamos</p>
+                                        <p class="text-roboto">Te mostramos un diseño tentativo de cómo se verá.</p>
                                     </div>
                                 </article>
         
                                 <article class="col-12 col-md-3 ">
                                     <div class="bg-white border rounded p-3 h-100">
-                                        <i class="bi bi-3-circle-fill fs-1 text-beba text-primary"></i>
-                                        <p class="text-roboto text-black fs-4 mb-0">Desarrollamos</p>
-                                        <p class="">Programamos tu web con tecnología moderna.</p>
+                                        <p class="text-primary text-bebas fs-3 mb-0"><i class="bi bi-3-square-fill"></i></p>
+                                        <p class="text-bebas text-black fs-4 mb-0">Desarrollamos</p>
+                                        <p class="text-roboto">Programamos tu web con tecnología moderna.</p>
                                     </div>
                                 </article>
         
                                 <article class="col-12 col-md-3">
                                     <div class="bg-white border rounded p-3 h-100">
-                                        <i class="bi bi-4-circle-fill fs-1 text-beba text-primary"></i>
-                                        <p class="text-roboto text-black fs-4 mb-0 ">Entregamos</p>
-                                        <p class="">¡Tu sitio online funcionando! Listo para compartir.</p>
+                                        <p class="text-primary text-bebas fs-3 mb-0"><i class="bi bi-4-square-fill"></i></p>
+                                        <p class="text-bebas text-black fs-4 mb-0 ">Entregamos</p>
+                                        <p class="text-roboto">¡Tu sitio online funcionando! Listo para compartir.</p>
                                     </div>
                                 </article> 
                             </div>                   
