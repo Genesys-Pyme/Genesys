@@ -4,6 +4,9 @@ document.body.insertAdjacentHTML("beforeend",`
 
 <div id="gyno-container">
 
+<div id="gyno-bubble">
+...
+</div>
 
 <img src="/img/gyno.png" id="gyno-floating">
 
