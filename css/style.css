@@ -107,7 +107,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 80px
 }
 
@@ -370,7 +370,11 @@ border-top:10px solid white;
   .text-bebas3{
     font-family: "BebasNeue-Regular";
     font-size: 5rem;
-    
+
+}
+
+#banner{
+    min-height: 90vh;
 }
 }
 
