@@ -360,6 +360,18 @@ border-top:10px solid white;
 }
 }
 
+#objetivo{
+    min-height: 100vh;
+}
+
+.fondoRojo{
+    background-color: #FFF8F8;
+}
+
+.fondoAzul{
+    background-color: #EDF7FF;
+}
+
 #proceso{
     min-height: 100vh;
 }
